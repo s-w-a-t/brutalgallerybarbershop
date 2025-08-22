@@ -16,7 +16,16 @@ import ArrowRight from '@/assets/icons/arrow-right.svg'
 import Lines from '../Lines'
 import s from './Hero.module.scss'
 
-const Hero = ({ orderLabel, orderLink, title, label, pics }) => {
+const BtnPhone = ({callLabel, phone, className }) => (
+  <a
+    href={`tel:${phone}`}
+    className={clsx('btn btn--secondary', s.header_btn, className)}
+  >
+    {callLabel}
+  </a>
+)
+
+const Hero = ({ orderLabel, orderLink, callLabel, title, label, pics }) => {
   const containerRef = useRef(null)
 
   const thumbs = pics.slice(1).concat(pics[0])
@@ -138,12 +147,10 @@ const Hero = ({ orderLabel, orderLink, title, label, pics }) => {
           {orderLabel}
         </a>
 
-        <a
-          href="tel:+380XXXXXXXXX"
-          className={clsx(s.hero_cta_secondary)}
-        >
-          Зателефонувати
-        </a>
+        <BtnPhone
+          callLabel={callLabel}
+          className={s.mobile}
+        />
       </div>
 
         <div id="swiper-pagination-hero" className={s.hero_pagination} />

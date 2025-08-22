@@ -40,7 +40,8 @@ const GLOBAL_QUERY = `
     }
     copyright
     orderLabel
-    orderLink
+    orderLink,
+    callLabel,
     telegram
     instagram
   }
@@ -49,7 +50,7 @@ const GLOBAL_QUERY = `
 
 const RootLayout = async ({ children }) => {
   const { data } = await performRequest({ query: GLOBAL_QUERY })
-  const { logo, menu, copyright, orderLabel, orderLink, telegram, instagram } =
+  const { logo, menu, copyright, orderLabel, orderLink, callLabel, telegram, instagram } =
     data?.layout || {}
   return (
     <html lang="uk">

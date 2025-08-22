@@ -149,10 +149,10 @@ const Hero = ({ orderLabel, orderLink, callLabel, title, label, pics }) => {
       
         <div id="swiper-pagination-hero" className={s.hero_pagination} />
         <div className={s.hero_cta_wrapper}>
-             <BtnPhone
-          callLabel={callLabel}
-          className={s.mobile}
-        />
+          <BtnPhone
+            callLabel={callLabel}
+            className={s.mobile}
+          />
         </div>
       </div>
 

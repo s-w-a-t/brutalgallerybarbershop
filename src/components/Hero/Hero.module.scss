@@ -35,8 +35,8 @@
 
   &_cta_secondary {
     flex: 1;
-    width: 100%;
-    background: transparent;
+    // width: 100%;
+    background: var(--red);
     border: 2px solid var(--white);
     color: var(--white);
     text-align: center;

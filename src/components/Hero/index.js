@@ -137,7 +137,7 @@ const Hero = ({ orderLabel, orderLink, callLabel, title, label, pics }) => {
           ))}
         </Swiper>
 
-       <div className={s.hero_cta_wrapper}>
+      
         <a
           href={orderLink}
           target="_blank"
@@ -146,14 +146,14 @@ const Hero = ({ orderLabel, orderLink, callLabel, title, label, pics }) => {
         >
           {orderLabel}
         </a>
-
-        <BtnPhone
+      
+        <div id="swiper-pagination-hero" className={s.hero_pagination} />
+        <div className={s.hero_cta_wrapper}>
+             <BtnPhone
           callLabel={callLabel}
           className={s.mobile}
         />
-      </div>
-
-        <div id="swiper-pagination-hero" className={s.hero_pagination} />
+        </div>
       </div>
 
       <Lines className={s.hero_lines} />

@@ -128,6 +128,7 @@ const Hero = ({ orderLabel, orderLink, title, label, pics }) => {
           ))}
         </Swiper>
 
+       <div className={s.hero_cta_wrapper}>
         <a
           href={orderLink}
           target="_blank"
@@ -136,6 +137,14 @@ const Hero = ({ orderLabel, orderLink, title, label, pics }) => {
         >
           {orderLabel}
         </a>
+
+        <a
+          href="tel:+380XXXXXXXXX"
+          className={clsx(s.hero_cta_secondary)}
+        >
+          Зателефонувати
+        </a>
+      </div>
 
         <div id="swiper-pagination-hero" className={s.hero_pagination} />
       </div>

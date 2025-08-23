@@ -27,7 +27,7 @@ const BtnPhone = ({callLabel, callPhone, className }) => (
       width: '100%',
     }}
   >
-    {callPhone}
+    {callLabel}
   </a>
 )
 

@@ -115,7 +115,8 @@ const PAGE_CONTENT_QUERY = `
       telegram
       orderLabel
       orderLink,
-      callLabel
+      callLabel,
+      callPhone
     }
   }`
 
@@ -170,7 +171,7 @@ const Home = async () => {
     ctaButtonLink,
   } = data?.content || {}
 
-  const { instagram, telegram, orderLabel, orderLink, callLabel } = data?.layout || {}
+  const { instagram, telegram, orderLabel, orderLink, callLabel, callPhone } = data?.layout || {}
 
   return (
     <>
@@ -181,6 +182,7 @@ const Home = async () => {
         orderLabel={orderLabel}
         orderLink={orderLink}
         callLabel={callLabel}
+        callPhone={callPhone}
       />
       <About
         title={aboutTitle}

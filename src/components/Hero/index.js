@@ -16,21 +16,22 @@ import ArrowRight from '@/assets/icons/arrow-right.svg'
 import Lines from '../Lines'
 import s from './Hero.module.scss'
 
-const BtnPhone = ({callLabel, phone, className }) => (
+const BtnPhone = ({callLabel, callPhone, className }) => (
   <a
     href={`tel:${phone}`}
     className={clsx('btn btn_sec-outline', s.header_btn, className)}
     style={{
-      backgroundColor: '#575757', // серый цвет по умолчанию
-      color: '#fff', // белый цвет текста
-      borderColor: '#575757', // серый цвет границы
+      backgroundColor: '#575757',
+      color: '#fff', 
+      borderColor: '#575757',
+      width: '100%'
     }}
   >
-    {callLabel}
+    {callPhone}
   </a>
 )
 
-const Hero = ({ orderLabel, orderLink, callLabel, title, label, pics }) => {
+const Hero = ({ orderLabel, orderLink, callLabel, callPhone, title, label, pics }) => {
   const containerRef = useRef(null)
 
   const thumbs = pics.slice(1).concat(pics[0])
@@ -156,6 +157,7 @@ const Hero = ({ orderLabel, orderLink, callLabel, title, label, pics }) => {
         <div className={s.hero_cta_wrapper}>
           <BtnPhone
             callLabel={callLabel}
+            callPhone={callPhone}
             className={s.mobile}
           />
         </div>

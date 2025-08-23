@@ -21,7 +21,7 @@ const BtnPhone = ({callLabel, phone, className }) => (
     href={`tel:${phone}`}
     className={clsx('btn btn_sec-outline', s.header_btn, className)}
     style={{
-      backgroundColor: color || '#575757', // серый цвет по умолчанию
+      backgroundColor: '#575757', // серый цвет по умолчанию
       color: '#fff', // белый цвет текста
       borderColor: '#575757', // серый цвет границы
     }}

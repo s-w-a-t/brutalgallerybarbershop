@@ -239,7 +239,7 @@ section {
   }
 
   &--secondary {
-    color:#575757;
+    color: var(--white);
 
     &:hover,
     &:focus-visible {

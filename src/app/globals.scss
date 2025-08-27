@@ -228,7 +228,7 @@ section {
   }
 
   &--primary {
-    color: var(--red);
+    color: var(--gray-light);
 
     &:hover,
     &:focus-visible {
@@ -238,6 +238,15 @@ section {
   }
 
   &--secondary {
+    color:#575757;
+
+    &:hover,
+    &:focus-visible {
+      background-color: var(--white);
+      border-color: #575757;
+    }
+  }
+   &--third {
     color: var(--white);
 
     &:hover,
@@ -246,6 +255,7 @@ section {
       border-color: var(--white);
     }
   }
+
 
   &--small {
     font-size: 14px;

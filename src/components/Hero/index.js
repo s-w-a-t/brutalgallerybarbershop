@@ -17,13 +17,12 @@ import Lines from '../Lines'
 import s from './Hero.module.scss'
 
 const BtnPhone = ({callLabel, callPhone, className }) => (
-  <a
+  <a 
     href={`tel:${callPhone}`}
-    className={clsx('btn btn_sec-outline', s.header_btn, className)}
+    className={clsx('btn btn--third', s.header_btn, className)}
     style={{
-      backgroundColor: '#575757',
-      color: '#fff', 
-      borderColor: '#575757',
+      // backgroundColor: '#575757', 
+      // borderColor: '#575757',
       width: '100%',
     }}
   >

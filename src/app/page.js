@@ -114,8 +114,8 @@ const PAGE_CONTENT_QUERY = `
       instagram
       telegram
       orderLabel
-      orderLink,
-      callLabel,
+      orderLink
+      callLabel
       callPhone
     }
   }`

@@ -41,8 +41,8 @@ const GLOBAL_QUERY = `
     copyright
     orderLabel
     orderLink,
-    callLabel,
-    callPhone,
+    callLabel
+    callPhone
     telegram
     instagram
   }

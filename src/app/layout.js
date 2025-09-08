@@ -26,6 +26,12 @@ export const metadata = {
   title: 'Brutal Gallery Barbershop',
   description:
     'Brutal Gallery Barbershop | Чоловічі стрижки | Бороди | Ужгород',
+  verification: {
+    google: '"sK5CpBpgpAMVIPOV1Id-TZg1DZlbpsb_1kdHwIxKUU8',
+  },
+  alternates: {
+    canonical: 'https://brutalgallerybarbershop.com',
+  },
 }
 
 const GLOBAL_QUERY = `

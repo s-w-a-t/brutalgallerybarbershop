@@ -73,6 +73,11 @@ const RootLayout = async ({ children }) => {
           `}
         </Script>
         {/* End Google Tag Manager */}
+        <meta
+          name="description"
+          content="Brutal Gallery Barbershop — це більше, ніж чоловіча перукарня. Місце, де стиль і професіоналізм створюють справжню атмосферу мужності."
+        />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={clsx(rubik.variable, montserrat.variable)}>
          {/* Google Tag Manager (noscript) */}

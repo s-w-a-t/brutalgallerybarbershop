@@ -25,7 +25,7 @@ const montserrat = Montserrat({
 export const metadata = {
   title: 'Brutal Gallery Barbershop',
   description:
-    'Brutal Gallery Barbershop | Чоловічі стрижки | Бороди | Ужгород',
+    'Brutal Gallery Barbershop | Чоловічі стрижки | Бороди | Ужгород \n',
   verification: {
     google: 'sK5CpBpgpAMVIPOV1Id-TZg1DZlbpsb_1kdHwIxKUU8',
   },
